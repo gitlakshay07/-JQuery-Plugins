@@ -1,3 +1,4 @@
+//                                              ACCORDIAN
 // $(document).ready(function(){
 //     $('.accordian').click(function(){
 //       $(".a-child").removeClass('.a-child')
@@ -17,3 +18,4 @@ $(document).ready(function(){
         }
     })
 })
+//                                              ACCORDIAN
