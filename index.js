@@ -6,7 +6,7 @@
 //     })
 // })
 $(document).ready(function(){
-    
+
     $('.accordian-item').click(function(){
 
         $('.a-child').slideUp('fast');
@@ -19,3 +19,15 @@ $(document).ready(function(){
     })
 })
 //                                              ACCORDIAN
+$(document).ready(function() {
+    $('.toolhover').hover(function() {
+        
+    const tooltip = $(this).siblings('.toolshow');
+
+    if (tooltip.is(':visible')) {
+        tooltip.fadeOut(200);
+    } else {
+        tooltip.fadeIn(200);
+    }
+});
+});

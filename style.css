@@ -1,8 +1,39 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 .a-child{
     display: none;
 }
+/* ToolTip */
+.tooltips {
+    position: relative;
+    display: inline-block;
+}
+
+.toolshow {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.toolshow::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+/* ToolTip */
