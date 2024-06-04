@@ -1,4 +1,4 @@
-//                                              ACCORDIAN
+//                                              
 // $(document).ready(function(){
 //     $('.accordian').click(function(){
 //       $(".a-child").removeClass('.a-child')
@@ -6,7 +6,7 @@
 //     })
 // })
 $(document).ready(function(){
-
+//                                          ACCORDIAN
     $('.accordian-item').click(function(){
 
         $('.a-child').slideUp('fast');
@@ -17,17 +17,26 @@ $(document).ready(function(){
             $(this).next().slideDown('fast');
         }
     })
-})
-//                                              ACCORDIAN
-$(document).ready(function() {
-    $('.toolhover').hover(function() {
-        
-    const tooltip = $(this).siblings('.toolshow');
+//                                           ACCORDIAN
 
-    if (tooltip.is(':visible')) {
-        tooltip.fadeOut(200);
-    } else {
-        tooltip.fadeIn(200);
-    }
-});
-});
+//                                           TOOLTIP
+    $('.toolhover').hover(function() {
+
+        const tooltip = $(this).siblings('.toolshow');
+
+        if (tooltip.is(':visible')) {
+            tooltip.fadeOut(200);
+        } else {
+            tooltip.fadeIn(200);
+        }
+    });
+//                                           TOOLTIP
+
+//                                           DROPDOWN
+
+    $('.dropdowns').click(function(){
+        $('.dropdown-items').removeClass(this).slideToggle('fast');;
+    })
+
+//                                           DROPDOWN
+})

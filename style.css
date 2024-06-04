@@ -37,3 +37,9 @@
     border-color: #333 transparent transparent transparent;
 }
 /* ToolTip */
+
+/* Dropdown */
+.dropdown-items{
+    display: none;
+}
+/* Dropdown */
